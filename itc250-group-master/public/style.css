@@ -1,0 +1,138 @@
+body{
+  font-family: "Sigmar One", sans-serif;
+  background: #ffffff;
+  color: #333333;
+}
+
+main{
+  width: 95%;
+  margin: 15px auto 0 auto;
+  position: relative;
+  display: block;
+  font-size: 50px;
+}
+
+/* Toolbox */
+.hidden{
+  display: none;
+}
+
+/* Font Toolbox */
+h1{
+  font-size: 76px;
+}
+
+h2{
+  font-size: 50px;
+}
+
+.results{
+  font-size: 90px;
+}
+
+.description{
+  color: #ff0266;
+}
+.important{
+  color: #FFde03;
+}
+
+/* Container styling */
+.container-full,
+.container-half{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.container-half{
+  width:50%;
+  max-width: 480px;
+  float: left;
+}
+
+.forum-text{
+  width: 100%;
+  position: relative;
+  font-size: 76px;
+}
+
+.forum-text label{
+  width:50%;
+}
+.forum-text input{
+  width: 50%;
+}
+
+/* Forum Styling */
+form{
+  font-size: 50px;
+}
+
+/* Text boxes */
+input[type=text]{
+  font-family: "Sigmar One", sans-serif;
+  font-size: 76px;
+  border:0;
+  background:none;
+  color: #FFde03;
+  height: 60px;
+}
+
+/* Fixing Chrome UI */
+textarea:focus, input:focus{
+  outline: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #FFde03;
+  -webkit-box-shadow: none;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+
+/* Radio Boxes */
+input[type=radio]{
+  display: none;
+}
+
+input[type=radio] + label {
+  cursor: pointer;
+  height: 60px;
+  display: block;
+} 
+
+input[type=radio]:checked + label {
+  color: #FFde03;
+  cursor: default;
+}
+
+/* Submit button */
+input[type=submit]{
+  border: 0;
+  width: auto;
+  height: auto;
+  background: none;
+  font-family: "Sigmar One", sans-serif;
+  font-size: 50px;
+  padding: 5px 20px;
+  color: #ffffff;
+  background: #ff0266;
+
+  -webkit-transition: all .2s ease-in-out; /* Safari */
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+input[type=submit]:hover{
+  background: #FFde03;
+}
